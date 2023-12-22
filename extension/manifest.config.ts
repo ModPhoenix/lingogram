@@ -17,4 +17,10 @@ export default defineManifest(async () => ({
   version: `${major}.${minor}.${patch}.${label}`,
   version_name: version,
   action: { default_popup: "index.html" },
+  content_scripts: [
+    {
+      js: ["src/content"],
+      matches: ["<all_urls>"],
+    },
+  ],
 }));

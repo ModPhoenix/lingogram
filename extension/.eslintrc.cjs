@@ -6,12 +6,14 @@ module.exports = {
     "plugin:@typescript-eslint/strict-type-checked",
     "plugin:@typescript-eslint/stylistic-type-checked",
     "plugin:react-hooks/recommended",
+    "plugin:prettier/recommended",
   ],
   ignorePatterns: [
     "dist",
     ".eslintrc.cjs",
     "vite.config.ts",
     "manifest.config.ts",
+    "tailwind.config.js",
   ],
   parser: "@typescript-eslint/parser",
   parserOptions: {

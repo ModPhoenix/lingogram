@@ -20,14 +20,14 @@ export function TooltipForEachWordOnPage() {
         const wordSpan = document.createElement("span");
         wordSpan.textContent = word;
         // random add 3 colors to the word
-        // yellow, red, with out color
+        // yellow, red, blue and with out color
         const color = [
-          "rgba(255, 255, 128, .2)",
-          "rgba(255, 128, 128, .2)",
+          "rgba(255, 255, 128, .1)",
+          "rgba(255, 128, 128, .1)",
+          "rgba(128, 128, 255, .1)",
           "",
         ];
-        // wordSpan.style.backgroundColor = "rgba(255, 255, 128, .2)";
-        wordSpan.style.backgroundColor = color[Math.floor(Math.random() * 3)];
+        wordSpan.style.backgroundColor = color[Math.floor(Math.random() * 4)];
         wordSpan.className = "tooltip";
         span.appendChild(wordSpan);
 
